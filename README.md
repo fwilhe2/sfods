@@ -46,6 +46,9 @@ As an alternative, consider the following xml file:
 ```
 
 The file is more complicated to create, but still simple compared to other spreadsheet formats and it has the advantage that it supports formulas, named ranges and data types.
+Also it does not contain the large amounts of metadata which Flat ODS files produced by LibreOffice contain.
+This makes it much more suitable to put spreadsheet files in version control because the diffs between commits don't contain a lot of noise.
+
 This format can be loslessly converted into odf or xlsx files which allows opening/editing them in a spreadsheet application without the manual effort of configuring CSV import.
 
 Additionally to xml, json and yaml can also be used to define the files.
